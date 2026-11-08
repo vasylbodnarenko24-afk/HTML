@@ -30,7 +30,6 @@ h1{
                 color: darkcyan;
             }
         
-/* Адаптивна навігація */
 * {box-sizing:border-box;}
 .page-links {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px;}
 .page-links a {display:block;text-align:center;padding:12px 5px;overflow-wrap:anywhere;}
