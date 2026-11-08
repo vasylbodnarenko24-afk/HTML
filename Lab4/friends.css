@@ -35,7 +35,6 @@ h1 {
         text-align: right;
     }
 
-/* Розміри шрифтів відповідно до ширини екрана */
 .table-scroll {width:100%;overflow-x:auto;}
 table {font-size:16px;}
 @media (min-width:992px) {th {font-size:130%;} td {font-size:120%;}}
