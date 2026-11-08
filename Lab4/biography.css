@@ -1,0 +1,79 @@
+h1{
+            text-align: center;
+            font-size: 22px;
+        }
+        a:nth-of-type(1){
+            font-style: italic;
+        }
+        h3{
+            text-align: center;
+        }  
+        .content-link{
+            display: inline-block;
+            width: 200px;
+            color:white;
+            background-color: blue;
+            border: 2px solid black;
+        }
+        .content-link:hover{
+            background-color: magenta;
+            color: white;
+        }
+        .content-link:active{
+            background-color: yellow;
+            color: black;
+        }
+        .content-link:visited{
+            color: white;
+            background-color: blue;
+        }
+        .bio-item {
+            font-size: 120%;
+        } 
+        .bio-block h2 {
+            font-size: 120%;
+        }
+        .bio-item:nth-child(1) .bio-block {
+            background-color: lightblue;
+            color: darkblue;
+        }
+        .bio-item:nth-child(2) .bio-block {
+            background-color: lightgreen;
+            color: darkgreen;
+        }
+        .bio-item:nth-child(3) .bio-block {
+            background-color: lightyellow;
+            color: darkred;
+        }
+        .bio-item:nth-child(4) .bio-block {
+            background-color: lightpink;
+            color: darkred;
+        }
+        .bio-item:nth-child(5) .bio-block {
+            background-color: lightgray;
+            color: black;
+        }
+        .bio-item > a {
+            font-weight: bold;
+        }
+        a[href="#0"] {
+            text-transform: uppercase;
+        }
+    
+/* Розташування блоків біографії */
+* {box-sizing:border-box;}
+.biography-grid {display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;margin-top:20px;}
+.bio-item {grid-column:span 2;min-width:0;display:flex;flex-direction:column;}
+.bio-item:nth-child(4),.bio-item:nth-child(5) {grid-column:span 3;}
+.bio-block {border:1px solid black;padding:12px;flex:1;overflow-wrap:anywhere;}
+.bio-block p {background:transparent!important;}
+.bio-item > a {margin-top:8px;align-self:flex-start;}
+@media (min-width:768px) and (max-width:991px) {
+ .biography-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .bio-item,.bio-item:nth-child(4),.bio-item:nth-child(5) {grid-column:span 1;}
+ .bio-item:nth-child(5) {grid-column:1/-1;}
+}
+@media (max-width:767px) {
+ .biography-grid {grid-template-columns:1fr;}
+ .bio-item,.bio-item:nth-child(4),.bio-item:nth-child(5) {grid-column:1/-1;}
+}

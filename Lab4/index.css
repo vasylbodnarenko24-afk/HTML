@@ -1,0 +1,38 @@
+h1{
+            text-align: center;
+            font-size: 24px;
+            }
+            p{
+                font-size: 120%;
+            }
+            .page-links a:nth-child(1){
+                color:magenta;
+            }
+            .page-links a:nth-child(1):visited{
+                color: darkmagenta;
+            }
+            .page-links a:nth-child(2){
+                color: gold;
+            }
+            .page-links a:nth-child(2):visited{
+                color: darkgoldenrod;
+            }
+            .page-links a:nth-child(3){
+                color:green;
+            }
+            .page-links a:nth-child(3):visited{
+                color: darkgreen;
+            }
+            .page-links a:nth-child(4){
+                color:rgb(43, 183, 238);
+            }
+            .page-links a:nth-child(4):visited{
+                color: darkcyan;
+            }
+        
+/* Адаптивна навігація */
+* {box-sizing:border-box;}
+.page-links {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px;}
+.page-links a {display:block;text-align:center;padding:12px 5px;overflow-wrap:anywhere;}
+@media (min-width:768px) and (max-width:991px) {.page-links {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media (max-width:767px) {.page-links {grid-template-columns:1fr;}}
