@@ -1,0 +1,147 @@
+
+
+body {
+        margin: 20px;
+        font-family: 'Lora', serif;
+    }
+
+h1 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+h2 {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+    }
+
+h3 {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+    }
+
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+.block {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+.block:nth-child(1) {
+        background-color: #d9edf7;
+        color: #17354a;
+    }
+
+.block:nth-child(2) {
+        background-color: #d9f2d9;
+        color: #174a27;
+    }
+
+.block:nth-child(3) {
+        background-color: #fff0c2;
+        color: #594000;
+    }
+
+.block:nth-child(4) {
+        background-color: #f5d9e8;
+        color: #59213f;
+    }
+
+.block h4 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.2em;
+        width: 180px;
+        height: 60px;
+        border: 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.block:nth-child(1) h4 {
+        border-color: darkblue;
+        background-color: #b5d9ef;
+    }
+
+.block:nth-child(2) h4 {
+        border-color: darkgreen;
+        background-color: #b9e4b9;
+    }
+
+.block:nth-child(3) h4 {
+        border-color: orange;
+        background-color: #ffe39a;
+    }
+
+.block:nth-child(4) h4 {
+        border-color: purple;
+        background-color: #edb8d5;
+    }
+
+table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+img {
+        width: 320px;
+        height: 240px;
+        max-width: 100%;
+    }
+
+.parent {
+        position: relative;
+        height: 120px;
+        border: 1px dashed gray;
+    }
+
+.child {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        padding: 5px;
+    }
+
+.image-link {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+@media (max-width: 768px) {
+    .block {
+            width: 100%;
+        }
+    }
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .block {
+            width: calc(50% - 10px);
+        }
+    }
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .block {
+            width: calc((100% - 40px) / 3);
+        }
+
+    .block:nth-child(4) {
+            idth: 100%;
+        }
+    }
+
+@media (min-width: 1200px) {
+    .block {
+            width: calc((100% - 60px) / 4);
+        }
+    }
